@@ -1,0 +1,29 @@
+
+spring:
+  datasource:
+    url: jdbc:mariadb://192.168.56.1:3306/jandb
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: jandb
+    password: jandb
+
+logging:
+  config: classpath:log/logback-spring.xml
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registryFetchIntervalSeconds: 5
+    disable-delta: true
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://192.168.56.1:8761/eureka
+
+cust.security:
+  ignore:
+    path:
+      - /favicon.ico
+      - /error
+    resource:
+      - exe
