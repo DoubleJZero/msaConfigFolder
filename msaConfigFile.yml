@@ -1,11 +1,11 @@
 
 spring:
   datasource:
-    url: jdbc:mariadb://127.0.0.1:3306/jandb
+    url: ENC(gMR/NvBVO1x4uZVtycBNPxnRWuk84XgGtvEYTYxm38T28uyA3hF8dJEvwnKlHnc+)
     driver-class-name: org.mariadb.jdbc.Driver
-    username: jandb
-    password: jandb
-
+    username: ENC(AOlqjc7Vu97CirlATUxSDg==)
+    password: ENC(qg5r8Eg7+MunDRuXG0nfcg==)
+#url: jdbc:mariadb://127.0.0.1:3306/jandb
 logging:
   config: classpath:log/logback-spring.xml
 
@@ -18,7 +18,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://192.168.56.1:8761/eureka
+      #defaultZone: http://localhost:8761/eureka
 
 cust.security:
   ignore:
