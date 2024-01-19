@@ -27,3 +27,10 @@ cust.security:
       - /error
     resource:
       - exe
+
+encrypt:
+  algolithm: PBEWithMD5AndDES
+  key-obtention-iterations: 1000
+  pool-size: 1
+  salt-generator-class-name: org.jasypt.salt.RandomSaltGenerator
+  string-output-type: base64
