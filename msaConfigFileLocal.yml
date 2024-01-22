@@ -34,3 +34,12 @@ encrypt:
   pool-size: 1
   salt-generator-class-name: org.jasypt.salt.RandomSaltGenerator
   string-output-type: base64
+
+---
+spring:
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
